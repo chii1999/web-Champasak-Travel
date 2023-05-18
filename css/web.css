@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2f2f2; 
+  font-family: "Open Sans","Noto Sans Lao", "Phetsarath OT", sans-serif;
+}
+
+/* ກຳນົດ Scroll bar ໃຫ້ມີສີ ແລະ ສວຍງາມຂື້ນ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffac00;
+  border-radius: 30px;
+}
+
+/* ປ້າຍໂຄສະນາ ຮູບພາບຈະສະໄລ້ ເມື່ອຜູ້ນຳໃຊ້ ຄຮິກໃສ່ປຸ່ມ next, prev... */
+ 
+.slider-image { 
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-image:first-child {
+  opacity: 1;
+}
+ 
+/* ເມື່ອຜູ້ນຳໃຊ້ເລື່ອນ Scrollbar ແທັບເມນູດ້ານເທິງ ຈະມີສີພື້ນຫຼັງເປັນ ສີຂາວ ແລະ ຢຶດຢູ່ກັບທີ່ */
+#hero ul a {
+  color: #fff;
+}
+#hero ul a:hover {
+  color: #ffac00;
+}
+
+#hero.active ul a {
+  color: #ffac00;
+}
+#hero.active {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top:4px;
+  padding-bottom:4px;
+}
+
+
+/* ຄຣິກໃຫ້ສະແດງ ເມນູ */
+#menu {
+    left: -100%;
+}
+
+#menu.active {
+    left: 0;
+    transition: .5s ease-in-out;
+}
+ 

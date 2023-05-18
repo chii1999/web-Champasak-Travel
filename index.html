@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Champasak</title>
+    <link rel="stylesheet" href="css/web.css">
+    <script src="js/tailwindcss.js"></script>
+</head>
+
+<body>
+
+    <!-- ເປີດພາກສ່ວນ menu ດ້ານເທິງ -->
+    <nav id="hero"
+        class="left-0 top-0 z-50 fixed flex justify-between ease-in-out duration-300 items-center w-full lg:px-20 md:px-18 sm:px-4 px-4 py-4">
+        <a href=""
+            class="font-[800] text-4xl ease-in-out duration-300 text-[#ffac00] py-2  flex justify-center items-center  ">
+            CK Travel</a>
+
+        <!-- menu ສຳຫລັບ Pc, Teptlet -->
+        <ul class="lg:block md:hidden sm:hidden hidden">
+            <a href="#"
+                class="px-8 py-3 text-[#ffac00] hover:bg-[#f2f2f2] ease-in-out duration-300 hover:text-[#455] font-semibold uppercase">ໜ້າຫຼັກ</a>
+            <a href="about.html"
+                class="px-8 py-3 text-[#ffac00] hover:bg-[#f2f2f2] ease-in-out duration-300 hover:text-[#455] font-semibold uppercase">ກ່ຽວກັບ</a>
+            <a href="#"
+                class="px-8 py-3 text-[#ffac00] hover:bg-[#f2f2f2] ease-in-out duration-300 hover:text-[#455] font-semibold uppercase">ຄວາມເປັນມາ</a>
+            <a href="#"
+                class="px-8 py-3 text-[#ffac00] hover:bg-[#f2f2f2] ease-in-out duration-300 hover:text-[#455] font-semibold uppercase">ຕິດຕໍ່ພວກເຮົາ</a>
+        </ul>
+
+
+        <!-- menu ສຳຫລັບ mobile -->
+        <ul id="menu"
+            class="lg:hidden md:block sm:block block flex flex-col gap-2 w-full z-50 absolute top-[4em] bg-[#445]">
+            <a href="#"
+                class="px-8 py-3 hover:bg-slate-100 ease-in-out duration-300 hover:text-gray-800 font-semibold uppercase">ໜ້າຫຼັກ</a>
+            <a href="about.html"
+                class="px-8 py-3 hover:bg-slate-100 ease-in-out duration-300 hover:text-gray-800 font-semibold uppercase">ກ່ຽວກັບ</a>
+            <a href="#"
+                class="px-8 py-3 hover:bg-slate-100 ease-in-out duration-300 hover:text-gray-800 font-semibold uppercase">ຄວາມເປັນມາ</a>
+            <a href="#"
+                class="px-8 py-3 hover:bg-slate-100 ease-in-out duration-300 hover:text-gray-800 font-semibold uppercase">ຕິດຕໍ່ພວກເຮົາ</a>
+        </ul>
+        <!-- ປຸ່ມຄຣິກໃຫ້ສະແດງ menu -->
+        <button id="hamburger"
+            class="border-none outline-none flex flex-col gap-1 hover:bg-[#777] p-3 rounded-sm ease-in-out duration-300 lg:hidden md:block sm:block block">
+            <span class="w-10 h-2 bg-[#ffd033] rounded-sm"></span>
+            <span class="w-10 h-2 bg-[#ffd033] rounded-sm"></span>
+            <span class="w-10 h-2 bg-[#ffd033] rounded-sm"></span>
+        </button>
+    </nav>
+
+    <!-- ເປີດພາກສ່ວນ ປ້າຍໂຄສະນາ -->
+    <div class="w-full">
+        <div class="banner-slider relative h-[38em]">
+
+            <div class="slider-image absolute  left-0 top-0 z-[40] w-full h-full flex justify-center items-center">
+                <img class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" src="Images/KhonPapeng/khon_img_01.jpg">
+                <div
+                    class="w-full absolute z-40 p-4 flex flex-col gap-2 justify-center items-start md:pl-32 sm:pl-20 pl-16">
+                    <h4
+                        class="lg:text-[4.55rem] md:tet-[4rem] sm:text-[2.8rem] text-[2.8rem] font-bold drop-shadow-md text-white">
+                        ຄອນພະເພັງ ຈຳປາສັກ</h4>
+                    <p class="text-white text-lg">ນໍ້າຕົກຕາດຄອນພະເພັງ ແມ່ນໜື່ງໃນບັນດາສະຖານທີ່
+                        ນໍ້າຕົກຕາດທີ່ກວ້າງໃຫຍ່ທີ່ສຸດ ແລະ ມີແມ່ນໍ້າຂອງໄຫຼຜ່ານ ເປັນບໍລິເວນກວ້າງເຖິງ 14 ກິໂລ ແມັດ.
+                        ມີນໍ້າຕົກທີ່ສູງ ແລະ ແຮງທີ່ໜ້າປະທັບໃຈທີ່ສຸດ ໂດຍສະເພາະໃນລະດູຝົນ ກະແສນໍ້າຈະໄຫຼຄົດລ້ຽວ ແລະ ໂຫດຮ້າຍ.
+                    </p>
+                    <a href=""
+                        class="py-3 cursor-pointer  flex justify-center items-center w-52 rounded-full  bg-gradient-to-t from-[#ffac00] to-[#ffcc00] text-white drop-shadow-md mt-10">ເພິ່ມເຕີມ..</a>
+                </div>
+            </div>
+
+            <div class="slider-image absolute  left-0 top-0 z-[40] w-full h-full flex justify-center items-center">
+                <img class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" src="../Images/Thakfan/that_img_01.jpg">
+                <div
+                    class="w-full absolute z-40 p-4 flex flex-col gap-2 justify-center items-start md:pl-32 sm:pl-20 pl-16">
+                    <h4
+                        class="lg:text-[4.55rem] md:tet-[4rem] sm:text-[2.8rem] text-[2.8rem] font-bold drop-shadow-md text-white">
+                        ນ້ຳຕົກຕາດຟານ</h4>
+                    <p class="text-white text-lg">ນ້ຳຕົກຕາດຟານ ຕາດທີ່ສູງທີ່ສຸດໃນລາວ " ນ້ຳຕົກຕາດຟານ ນ້ຳຕົກຝາແຝດ
+                        ແຫ່ງດົງຫົວສາວ ທີ່ສູງທີ່ສຸດຂອງລາວ ທ່າມກາງ ແລະ ແວດລ້ອມ ຫຸບເຂົາ ປ່າທຳມະຊາດ " ນ້ຳຕົກຕາດຟານ (ຕາດ ຄື
+                        ນ້ຳຕົກຟານ ຄື ຊື່ຂອງ ສັດປ່າຊະນິດໜຶ່ງ )</p>
+                    <a href=""
+                        class="py-3 cursor-pointer  flex justify-center items-center w-52 rounded-full  bg-gradient-to-t from-[#ffac00] to-[#ffcc00] text-white drop-shadow-md mt-10">ເພິ່ມເຕີມ..</a>
+                </div>
+            </div>
+
+            <div class="slider-image absolute  left-0 top-0 z-[40] w-full h-full flex justify-center items-center">
+                <img class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" src="Images/VatPhu/vat_img_01.jpg">
+                <div
+                    class="w-full absolute z-40 p-4 mt-20 flex flex-col gap-2 justify-center items-start md:pl-32 sm:pl-20 pl-16">
+                    <h4
+                        class="lg:text-[4.55rem] md:tet-[4rem] sm:text-[2.8rem] text-[2.8rem] font-bold drop-shadow-md text-white">
+                        ວັດພູຈຳປາສັກ</h4>
+                    <p class="text-white text-lg">ບູຮານສະຖານວັດຖຸ ຕັ້ງຢູ່ພາກໃຕ້ຂອງລາວ ທີ່ແຂວງຈຳປາສັກ ຊຶ່ງເປັນແຂວງທີ່ມີຊາຍແດນຕິດກັບ ປະເທດກຳປູເຈຍ ຫ່າງ ຈາກອັງກໍວັດປະມານ 200 ກິໂລແມັດ ແລະ ປະມານ 1 ຊົ່ວໂມງ ໄປທາງລົດຈາກປາກເຊ. </p>
+                    <a href=""
+                        class="py-3 cursor-pointer  flex justify-center items-center w-52 rounded-full  bg-gradient-to-t from-[#ffac00] to-[#ffcc00] text-white drop-shadow-md mt-10">ເພິ່ມເຕີມ..</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="slider-buttons flex gap-5 z-[45] absolute lg:bottom-[1.5em] md:bottom-[10px] bottom-5 left-[50%] translate-x-[-50%]">
+            <button
+                class="slider-button bg-white text-[#ffac00] ease-in-out duration-300 hover:bg-[#ffac00] hover:text-white py-3 rounded-md px-8 text-xl border-none"
+                onclick="prevSlide()">&#10094;</button>
+            <button
+                class="slider-button bg-white text-[#ffac00] ease-in-out duration-300 hover:bg-[#ffac00] hover:text-white py-3 rounded-md px-8 text-xl border-none"
+                onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    </div>
+    <!-- ປີດພາກສ່ວນ ປ້າຍໂຄສະນາ -->
+
+
+    <!-- ເປີດ ພາກສ່ວນ ດ້ານຂ້າງ -->
+    <fieldset class="w-full h-screen lg:px-20 md:px-18 sm:px-8 px-8 my-8 md:flex gap-6 justify-center items-center">
+
+        <div class="lg:w-[30em] md:w-full w-full bg-white h-full drop-shadow-lg p-8">
+            <h3 class="text-[#445] font-bold mb-6">ການແບ່ງເຂດປົກຄອງ</h3>
+            <p class="text-sm font-medium my-3">1. ຊະນະສົມບູນ (Sanasomboun)</p>
+            <p class="text-sm font-medium my-3">2. ບາຈຽງຈະເລີນສຸກ (Ba Chiengchaleunsouk)</p>
+            <p class="text-sm font-medium my-3">3. ປາກຊ່ອງ (Paksong) </p>
+            <p class="text-sm font-medium my-3">4. ປະທຸມພອນ (Pathoumphone)</p>
+            <p class="text-sm font-medium my-3">5. ໂພນທອງ (Phonthong)</p>
+            <p class="text-sm font-medium my-3">6. ຈຳປາສັກ (Champassak)</p>
+            <p class="text-sm font-medium my-3">7. ສຸຂຸມາ (Soukhouma)</p>
+            <p class="text-sm font-medium my-3">8. ມູນລະປະໂມກ (Meunlapamok) </p>
+            <p class="text-sm font-medium my-3">9. ປາກເຊ (Pakse)</p>
+            <p class="text-sm font-medium my-3">10. ໂຂງ (Khong)</p>
+        </div>
+
+        <div class="w-full h-full bg-white drop-shadow-lg p-8 lg:mt-0 md:mt-8 sm:mt-8 mt-8">
+            <h2 class="text-gray-600 text-xl font-semibold py-4">ແຂວງຈຳປາສັກ</h2>
+            <div class="w-full h-[20em] overflow-hidden drop-shadow-lg">
+                <img src="../Images/header.png" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+            </div>
+            <p class=" indent-10 text-justify py-3">
+                ແຂວງຈຳປາສັກ (ອັງກິດ: Champak) ເປັນແຂວງຫນຶ່ງຂອງປະເທດລາວທີ່ຕັ້ງຢູ່ທາງທິດໃຕ້ຂອງປະເທດ
+                ເປັນແຂວງສຳຄັນທາງພາກໃຕ້ມາຕັ້ງແຕ່ສະໃໝບູຮານ ເປັນທີ່ຕັ້ງຂອງອານາຈັກຈຳປາສັກ ເຄີຍຢູ່ໃນເຂດອານາຈັກຂອມບູຮານ
+                ແຂວງນີ້ເປັນທີ່ຕັ້ງຂອງມໍລະດົກໂລກ ຜາສາດຫິນວັດພູ ໃນສະໃໝກ່ອນປະເທດຝະລັ່ງຍຶດຄອງ
+                ເມືອງເອກຂອງແຂວງນີ້ຄືເມືອງຈຳປາສັກ ຕັ້ງຢູ່ທາງຝັ່ງຂວາຂອງແມ່ນ້ຳຂອງ
+                ແຕ່ຫຼັງຈາກຝະລັ່ງໄດ້ເຂົ້າມາຍຶດຄອງປະເທດລາວແລ້ວ ກໍຍ້າຍເມືອງເອກໄປທີ່ປາກເຊ ຊຶ່ງຢູ່ທາງເໜືອຈາກຈຳປາສັກໄປ 30
+                ກິໂລແມັດ ແລະ ຢູ່ທາງຝັ່ງຊ້າຍແມ່ນ້ຳຂອງ ແຂວງຈຳປາສັກນີ້ເປັນທີ່ຕັ້ງຂອງສຸດຍອດທຳມະຊາດຂອງປະເທດລາວມາກມາຍ ເຊ່ນ
+                ນ້ຳຕົກຄອນພະເພັງ ນ້ຳຕົກຜາສ້ວມ ນ້ຳຕົກຫຼີ່ຜີ ເຂດຕິດຕໍ່ຂອງແຂວງນີ້
+                ທາງຕະເວັນຕົກສາມາດຂ້າມໄປປະເທດໄທທາງຊ່ອງເມັກໄດ້ ແລະທາງໃຕ້ ຍັງສາມາດຂ້າມໄປກັມປູເຈຍທາງເວິນຄາມໄດ້ອີກດ້ວຍ.
+            </p>
+        </div>
+
+    </fieldset>
+    <!-- ປີດ ພາກສ່ວນ ດ້ານຂ້າງ -->
+
+    <!-- ເປີດ ພາກສ່ວນ ສະແດງຮູບ ສະຖານທີ ທ່ອງທ່ຽວ -->
+    <fieldset class="w-full lg:px-20 md:px-18 sm:px-8 px-8 my-8">
+
+        <div class="w-full bg-white drop-shadow-lg p-8">
+            <h3 class="font-semibold text-xl text-center">ສີພັນດອນ</h3>
+            <div class="w-full h-96 overflow-hidden my-7">
+                <img src="Images/SyPhandone/syp_img_01.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-xl" alt="">
+            </div>
+            <p class="text-justify indent-10 py-3">
+                ເຂດມະຫານະທີ ສີພັນດອນ ທີ່ເປັນເຂດເກາະດອນນ້ອຍໃຫຍ່ທີ່ ຊ່າລືພືຜ້າ ເລື່ອງເລົ່າຂານຕຳນານພື້ນເມືອງລາວ
+                ເຊິ່ງນັບແຕ່ດອນພະກ່ຳ ເມືອງຈຳປາສັກ ໄປຕົ້ນຈົນຮອດຊຸມດອນທີ່ຕັ້ງຢູ່ຫົວຄັນເຫວ ຄອນພະເພັງລ້ວນ
+                ແຕ່ມີຕຳນານພື້ນເມືອງລາວກັນມາຫລາຍ ເຊັ່ນຄົນ: ເລື່ອງດອນນາງໂລງ, ດອນນາງລອຍ, ເລື່ອງສອງບ່າວ ສາວລ່ອງເຮືອລົງ
+                ຄອນພະເພັງຈົນກະທັງຈົນຮອດດອນໄຊ. ໃນຈຳນວນດອນທີ່ກ່າວກັນວ່າ ສີ່ພັນດອນນັ້ນ
+                ຄວາມຈິງກໍ່ອາດຈະເຖິງຖ້າວ່ານັບຫມົດທັງນ້ອຍ ແລະ ໃຫຍ່ແຕ່ຖ້າຈຳແນກອອກເຊັ່ນ: ດອນທີ່ມີຄົນອາໄສຢູ່
+                ດອນທີ່ໃຊ້ລ້ຽງສັດປູກຝັງ ແລະ ດອນທີ່ຟູ ຫລື ພົ້ນນ້ຳແຕ່ຍາມແລ້ງກໍ່ເປັນອີກເລື່ອງຫນຶ່ງຕາມການສຳຫລວດຈາກ
+                ພາກສ່ວນທີ່ກ່ຽວຂ້ອງດອນ ທີ່ມີປະຊາຊົນອ າໄສຕັ້ງບ້ານເຮືອນຢູ່ທັງຫມົດ 364 ດອນ, ດອນໃຫຍ່ກວ່າຫມູ່
+                ກໍ່ແມ່ນດອນໂຂງມີຊາວປາຍ ບ້ານຖັດນັ້ນ ກໍ່ມີດອນເບັງ ຫລື ດອນສົມ, ດອນລົບປາດີ, ດອນຊ້າງໄພ, ດອນພິມານ,
+                ດອນຂະເຫມົາ,ດອນຮີ, ດອນໄຊ, ດອນສັນ, ດອນແດງ, ດອນໂລງ, ດອນຄອນ, ດອນເດດ ແລະ ອື່ນໆ ທີ່ຕັ້ງເກາະກ່າຍກັນໄປ,
+                ເທິງໜ້ານ້ຳແມ່ຂອງຕອນໃຕ້ ເຊິ່ງມີຄວາມກວ້າງ ປະມານ 15 ກິໂລແມັດ ໃນບັນດາບ້ານທີ່ ຢູ່ເທິງດອນ
+                ກໍ່ຍັງມີວັດວາສາດສະຫນາເກືອບທຸກບ້ານ ສ່ວນແບບ ແຜນດຳລົງຊີວິດກໍບໍ່ຜິດແປກ ຈາກຜູ້ທີ່ຢູ່ເທິງແຜ່ນດິນໃຫຍ່
+                ແຕ່ປະການໃດຕົ້ນຕໍອາຊີບກໍ່ແມ່ນການປູກຝັງລ້ຽງສັດ ໂດຍສືບທອດມາຈາກເຊັ່ນ: ປູ່, ຍ່າ,ຕາ, ທວດ
+                ສິ່ງທີ່ແຕກຕ່າງແດ່ກໍ່ຄົງການເດີນທາງໄປມາຂອງຊາວບ້ານແຖບນີ້
+                ໃຊ້ເຮືອເປັນພາຫະນະຕົ້ນຕໍໃນການລຳລຽງຂົນສົ່ງຕິດຕໍ່ພົວພັັນກັບຄົນຢູ່ຝັ່ງ ຫລື ລະຫວ່າງດອນດ້ວຍກັນ.
+                ສ່ວນຮີດຄອງປະເພນີນີ້ ແມ່ນບໍ່ມີການແຕກຕ່າງກັນປະການໃດຄືເຄົາລົບຮີດສິບສອງຄອງສິບສີ່ນຳກັນ ແລະ ອາດຈະມີການແຕກ
+                ຕ່າງກັນບາງເລັກນ້ອຍ ໂດຍສະເພາະການຕໍ່ສູ້ຫາລ້ຽງຊີບເຊັ່ນ:
+                ສູ້ກັບການພັດທະນາສູ້ກັບການຊອກຮ່ຳຮຽນຄວາມບໍ່ເປັນທຳສູ້ຊີວິດທີ່ຢູ່ ທ່າມກາງທຳມະຊາດກົດດັນເປັນຕົ້ນສາຍນ້ຳໄຫ.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="w-full bg-white drop-shadow-lg p-8">
+            <h3 class="font-semibold text-xl text-center">ຄອນພະເພັງ</h3>
+            <div class="w-full h-96 overflow-hidden my-7">
+                <img src="Images/KhonPapeng/khon_img_01.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+            </div>
+            <p class="text-justify indent-10">
+                ນໍ້າຕົກຕາດຄອນພະເພັງ ແມ່ນໜື່ງໃນບັນດາສະຖານທີ່ ນໍ້າຕົກຕາດທີ່ກວ້າງໃຫຍ່ທີ່ສຸດ ແລະ ມີແມ່ນໍ້າຂອງໄຫຼຜ່ານ
+                ເປັນບໍລິເວນກວ້າງເຖິງ 14 ກິໂລ ແມັດ. ມີນໍ້າຕົກທີ່ສູງ ແລະ ແຮງທີ່ໜ້າປະທັບໃຈທີ່ສຸດ ໂດຍສະເພາະໃນລະດູຝົນ
+                ກະແສນໍ້າຈະໄຫຼຄົດລ້ຽວ ແລະ ໂຫດຮ້າຍ. ນໍ້າຕົກຕາດແຫ່ງນີ້ ແມ່ນໄດ້ຖືກສະ ຖາປະນາໃຫ້ເປັນ ນໍ້າຕົກຕາດທີ່ໃຫຍ່ທີ່ສຸດ
+                ທາງດ້ານບໍລິມາດ ຢູ່ໃນອາຊີຕາເວັນອອກສຽງ ໃຕ້. ນອກຈາກຄວາມສວຍງາມຂອງ ນໍ້າຕົກຄອນພະເພັງ ທີ່ເຕັມ
+                ໄປດ້ວຍໂງ່ນຫີນສະຫຼັບຢາຍກັນແລ້ວ ກໍ່ຍັງມີພາບການທຳ ມາຫາກິນ ຂອງຊາວບ້ານຄື: ເຕັກນິກວິທີຈັບປາແບບດັ່ງເດີມ.
+                ນອກນັ້ນ ຍັງມີສະຖານທີ່ນໍ້າຕົກຕາດ ທີ່ໜ້າປະທັບໃຈອີກແຫ່ງ ໜື່ງຊື່ວ່າ: ຫຼີ່ຜີ,ຊຶ່ງສາມາດ ເຂົ້າໄປໄດ້ທາງເຮືອ
+                ຈາກບ້ານນາກະສັງໄປ. ຖ້າໂຊກດີກໍ່ອາດຈະເຫັນປາຂ່າ ໂລມານໍ້າຈືດ ທີ່ລອຍ ຫຼີ້ນໃນແມ່ນໍ້າຂອງ.ເມື່ອໄປເຖີງດອນຄອນ
+                ກໍ່ໄປເບິ່ງຫົວລົດໄຟເກົ່າ ໃນສະໄໝຝຣັ່ງເຂົ້າມາປົກຄອງ. ສະຖານທີ່ຕ່າງໆ ທັງໝົດ ແມ່ນສະດວກໃນການເຂົ້າ ໄປຮອດໄປເຖິງ
+                ແລະ ຄຸ້ມຄ່າໃນການທ່ອງທ່ຽວ.ຖ້າຈະຢຸດພັກຍາວ ກໍ່ມີເຮືອນພັກແບບລາວໆ ໃຫ້ພັກເຊົາ.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="w-full bg-white drop-shadow-lg p-8">
+            <h3 class="font-semibold text-xl text-center">ຜາສ້ວນ</h3>
+            <div class="w-full h-96 overflow-hidden my-7">
+                <img src="Images/Phasone/pha_s_img_01.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+            </div>
+            <p class="text-justify indent-10">
+                ຖ້າເວົ້າເຖິງນ້ຳຕົກຕາດແລ້ວ,ຕາດຜາສ້ວມກໍເປັນອີກແຫ່ງໜຶ່ງທີ່ມີຄວາມສວຍງາມເປັນ
+                ເອກະລັກໄປອີກແບບໜຶ່ງທີ່ໃຜໆໄດ້ໄປປາກເຊແລ້ວບໍ່ຄວນພາດທີ່ຈະໄປຢ້ຽມຊົມ.
+                ນອກຕາດຜາສ້ວມແລ້ວໃກ້ໆນັ້ນຍັງມີບ້ານຊົນເຜົ່າທີ່ຜູ້ຈັດການອຸທິຍານທ້າວບາຈຽງ
+                ໄດ້ຈັດຕັ້ງອະນຸລັກໄວ້ໃຫ້ນັກທ່ອງທ່ຽວໄດ້ສຳຜັດກິ່ນອາຍອັນດັ້ງເດີມຂອງວິຖີຊີວິດ
+                ຂອງຊົນເຜົ່າທ້ອງຖິ່ນດິນຈຳປາສັກ.ຄຳວ່າສ້ວມ ເປັນພາສາລາວໝາຍເຖິງຫ້ອງຫໍ ຫຼື ຫ້ອງນອນ
+                ເຊິ່ງລັກສະນະຂອງຕາດສ້ວມຄ້າຍຄືຫ້ອງຫໍຂອງຄູ່ສົມລົດໃໝ່. ຈຸດເດັ່ນຂອງນ້ຳຕົກຕາດຜາສ້ວມຄື
+                ສາຍນ້ຳທີ່ໄຫຼຜ່ານຫິນຜາຂະໜາດໃຫຍ່ທີ່ມີລັກສະນະເປັນແທ່ງໆ ຮູບຮ່າງຄ້າຍຫ້ອງຫໍ. ຢູ່ໃກ້ໆນັ້ນຍັງມີຮ້ານອາຫານ
+                ສະຖານທີ່ພັກຜ່ອນຢ່ອນອາລົມທີ່ຕົກແຕ່ງເຂົ້າກັບບັນຍາກາດເອົາແທ້ໆ ຢູ່ບ່ອນນີ້ຜູ້ຈັດການ ວິມົນ ກິດບຳລຸງ
+                ເພິ່ນໄດ້ເລົ່າໃຫ້ຟັງວ່າ ໃນຮ້ານອາຫານແຫ່ງນີ້ຫ້າມດື່ມເຄື່ອງດື່ມທີ່ມີທາດເຫຼົ້າ, ເຄື່ອງດື່ມລ້ວນແຕ່ແມ່ນສະໝູນໄພ,
+                ນ້ຳໝາກໄມ້ປັ່ນປະເພດຕ່າງໆ ແລະ ຍັງບໍລິການເຄື່ອງທີ່ລະນຶກ ເປັນຕົ້ນແມ່ນເສື້ອຢືດ ທີ່ພິມຂໍ້ຄວາມ
+                "ອຸດທະຍານບາຈຽງຈຳປາສັກ", "ເຮົາຮັກທຳມະຊາດ" ແລະອື່ນໆ
+                ນອກຈາກນີ້ພາຍໃນອຸດທະຍານຍັງມີພິພິທະພັນທີ່ຮວບຮວມເອົາໝູ່ບ້ານບູຮານຂອງຫຼາຍຊົນເຜົ່າມາຈັດສະແດງໃຫ້ນັກທ່ອງທ່ຽວໄດ້ທ່ຽວຊົມ
+                ສຳຜັດວາດດຳລົງ ຊີວິດອັນດັ້ງເດີມຂອງຊົນເຜົ່າທ້ອງຖິ່ນ, ການນຸ່ງຖື, ສີໄມ້ລາຍມືແລະ
+                ແຜ່ນແພຂອງຊົນເຜົ່າ,ລັກສະນະຕ່າງໆ ຂອງເຮືອນ, ຟັງສຽງເພງປະສານດົນຕີທ້ອງຖິ່ນ ໃນຈັງຫວະສາລະວັນ ແລະ ສີພັນດອນ
+                ຟັງແລ້ວອອນຊອນໃຈອີ່ຫຼີ ເຊັ່ນ ເຮືອນຊົນເຜົ່າກະຕາງ ເຊິ່ງເປັນຊົນເຜົ່າທີ່ອາໄສຢູ່ໃນພື້ນທີ່ໃກ້ໆ ນ້ຳຕົກຕາດຜາສ້ວມ,
+                ເຮືອນຂອງຊົນເຜົ່າອາລັກ, ເຮືອນຂອງຊົນເຜົ່າກະຕູ, ຫໍກວນທີ່ໃຊ້ເປັນສະຖານທີ່ປະກອບພິທີກຳຂອງເຜົ່າລະແວ
+                ພາຍໃນຈັດສະແດງພິພິທະພັນຂອງເຜົ່າຕ່າງໆ ໃຫ້ຊົມເປັນຈຳຫຼວງຫຼາຍ ແລະ ຫໍເສົາດຽວຂອງຊາວໜຸ່ມເຜົ່າລະແວ
+                ເຊິ່ງຕາມການເລົ່າຂອງຊົນເຜົ່າເຂົາບອກວ່າ
+                ເປັນບ່ອນທີ່ບ່າວສາວຂອງເຜົ່າລະແວໄວ້ລົມກັນ(ຈີບກັນ)ແລະທີ່ໜ້າສົນໃຈທີ່ສຸດຄືເຮືອນພັກ
+                (ລີສອດ)ຂອງທາງອຸດທະຍານທີ່ຕົກແຕ່ງໄດ້ສວຍງາມລົງຕົວ ດ້ວຍວັດຖຸທີ່ຊອກໄດ້ຕາມປ່າຕາມດົງ ໃນເຂດນັ້ນ.
+
+            </p>
+        </div>
+
+    </fieldset>
+    <!-- ປີດ ພາກສ່ວນ ສະແດງຮູບ ສະຖານທີ ທ່ອງທ່ຽວ -->
+
+
+    <!-- ເປີດ ພາກສ່ວນ ແນະນຳ -->
+    <fieldset class="w-full lg:px-20 md:px-18 sm:px-8 px-8 my-8">
+        <div class="w-full bg-white drop-shadow-lg p-8">
+            <div class="w-full flex justify-center items-center">
+                <h3 class="my-8 text-gray-600 font-semibold text-2xl py-4 border-b-2 border-b-[#ffd033]">ແນະນຳ</h3>
+            </div>
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 w-full">
+                <div
+                    class="w-full drop-shadow-lg mx-2 rounded-md hover:bg-[#f3f3f3] ease-in-out duration-300 overflow-hidden p-5">
+                    <div class="w-full h-[15em] overflow-hidden">
+                        <img src="Images/Vatluangpakse/vath_luang_img_01.jpg" class="w-full hover:scale-105 ease-in-out duration-300 h-full object-cover drop-shadow-lg" alt="">
+                    </div>
+                    <h4 class="py-2 text-xl font-semibold">ວັດຫລວງປາກເຊ</h4>
+                    <p class="py-2">
+                        ວັດຫລວງຕັ້ງຢູ່ແຄມນ້ຳເຊໂດນທາງທິດເຫນືອຂອງຕະຫລາດເກົ່າວັດຫລວງສ້າງຂຶ້ນໃນປີ ຄ.ສ 1935
+                        ເປັນວັດເກົ່າແກ່ແລະມີຄວາມສໍາຄັນໃນ ເມືອງປາກເຊ ເພາະເປັນສະຖານທີ່ມ້ຽນອັດຖີ
+                        ຂອງລາຊະວົງສາຍຈຳປາສັກຫລາຍພະອົງ ລວມທັງອັດຖິຂອງ ທ່ານກະຕ່າຍ ໂດນສະໂສລິດ ອະດີດ ລັດຖະມົນຕີລະບອບເກົ່າ.
+                        ມີລັກສະນະເປັນສະກຸບເຈດີ ຢັງຢາຍຮອບວັດຈຸດເດັ່ນຫນ້າຊົມຢູ່ບ່ອນບານປະຕູ ແລະປ່ອງ ຢ້ຽມຂອງສິມ
+                        ແກະສະຫລັກດ້ວຍ ໄມ້ລວດລາຍສວຍງາມ ຖັດມາທາງຂວາຂອງສິມເປັນອາຄານເກົ່າແກ່ ເຊິ່ງໃຊ້ເປັນຫໍສະໝຸດ ແລະ ສຳ
+                        ນັກງານຂອງຄູ ສ່ວນດ້ານຫລັງເປັນອາຄານໄມ້ 2 ຊັ້ນ
+                        ຕິດຢູ່ກັບແມ່ນ້ຳເຊໂດນໃຊ້ເປັນໂຮງຮຽນສອນພຸດທະສາສະຫນາສຳລັບສົງ.
+                    </p>
+                </div>
+                <div
+                    class="w-full drop-shadow-lg mx-2 rounded-md hover:bg-[#f3f3f3] ease-in-out duration-300 overflow-hidden p-5">
+                    <div class="w-full h-[15em] overflow-hidden">
+                        <img src="Images/Vatluangpakse/vath_luang_img_03.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+                    </div>
+                    <h4 class="py-2 text-xl font-semibold">ວັງເຈົ້າບຸນອຸ້ມ</h4>
+                    <p class="py-2">
+                        ວັງເຈົ້າບຸນອູ້ມ: ຕັ້ງຢູ່ຫ່າງຈາກເມືອງປາກເຊໄປທາງທິດຕາເວັ້ນອອກຕາມເສັ້ນທາງເລກທີ 13 ໄລຍະທາງປະມານ 500
+                        ແມັດໃນ ອະດີດວັງເຈົ້າບຸນອູ້ມ ເຄີຍເປັນທີ່ປະທັບຂອງເຈົ້າບຸນອູ້ມ ນະຈຳປາສັກ
+                        ເຈົ້າຜູ້ຄອງນະຄອນສຸດທ້າຍກ່ອນການປົດປ່ອຍຫລັງຈາກນັ້ນພະ ລາຊະວັງແຫ່ງນີ້ຕົກຢູ່ໃນການດູແລ ຂອງລັດຖະບານ
+                        ຫລັງການປະຕິດວັດໄດ້ຮັບໄຊຊະນະເຈົ້າບຸນອູ້ມໄປລີ້ໄພຢູ່ປະເທດຝຣັ່ງໃນປີ 1974 ແລະສິ້ນພະຊົນຢູ່ກຸງປາຣີໃນປີ
+                        1978, ພະຣາຊະວັງ ເລີ່ມສ້າງໃນປີ 1968 ແຕ່ສ້າງສຳເລັດຫລັງການປະຕິວັດປ່ຽນແປງການປົກຄອງໃນ ປີ 1975
+                        ເຮັດໃຫ້ເຈົ້າບຸນອູ້ມ ບໍ່ມີໂອກາດໄດ້ຄອງພະລາຊະວັງຫລັງໃຫມ່
+                        ເຊິ່ງຖືກສ້າງຂຶ້ນງົດງາມເຫນືອລຳນ້ຳເຊໂດນຕັ້ງຢູ່ເນີນສູງໃຈ ກາງເມືອງປາກເຊ ຕົວພະລາຊະວັງເປັນຕຶກກໍ່ສູງ 6
+                        ຊັ້ນໄດ້ຮັບອິດທິພົນຈາກປະເທດຝຣັ່ງສ້າງໂດຍບໍ່ມີການຕອກເສົາເຂັມ ແຕ່ໃຊ້ເສົາ
+                        ຈຳນວນຫລາຍໃນການຮັບນ້ຳຫນັກພາຍໃນພະລາຊະວັງມີປະຕູປ່ອງຢ້ຽມລວມກັນກວ່າ1.900 ບານປະຕູ
+                        ປ່ອງຢ້ຽມເຫລົ່ານີ້ກໍ່ສ້າງ ແລະ ຕົກແຕ່ງຢ່າງວິຈິດປານີດຈົນໄດ້ຮັບການຂະຫນານນາມວ່າ "ສາລາພັນຫ້ອງ"
+                        ຕົວພະລາຊະວັງ ຫັນຫນ້າໄປທາງແມ່ນ້ຳຂ ອງດ້ານຫລັງຢູ່
+                        ຕິດກັບລຳນ້ຳເຊໂດນ.ພະລາຊະວັງແຫ່ງນີ້ທາງລັດຖະບານໃຊ້ເປັນບ່ອນຈັດປະຊຸມ ແລະເປັນ
+                        ບ່ອນພັກຂອງແຂກບ້ານແຂກເມືອງຈົນມາ ເຖິງ ຄ.ສ 1995. ປະຈຸບັນພະລາຊະວັງໄດ້ຮັບການຕົກແຕ່ງໃຫມ່ ແລະ
+                        ເປີດເປັນໂຮງແຮມທີ່ດີທີ່ສຸດໃນເມືອງປາກເຊຊື່ວ່າ "ໂຮງແຮມ ຈຳປາພາເລດ ໂດຍ: ດຣ ປອງສັກ ວ່ອງພານິດຈະເລີນ
+                        ເປັນຜູ້ບູລະນະປັບປຸງໃຫມ່ແຜນຂອງໂຮງແຮມເປັນຮູບຕົວອີ (E)
+                        ຫ້ອງລ໊ອບບີ້ຕົກແຕ່ງດ້ວຍໄມ້ແລະແກະສະຫລັກຫ້ອງປະຊຸມຕົກແຕ່ງດ້ວຍຮູບຈິດຕະກຳຝາຜະຫນັງ ສຳລັບຊັ້ນທີ 6
+                        ເປັນຊັ້ນເທິງສຸດມີຈຸດຊົມວິວທີ່ ສາມາດແນມເຫັນທິວທັດ ໂດຍລວມ ຂອງເມືອງປາກເຊ, ຂົວມິດຕະພາບລາວຢີ່ປຸ່ນ
+                        ກ່າຍຍາວຂ້າມແມ່ນ້ຳຂອງຕະຫລອດຂົວເຫລັກຂ້າມ ນ້ຳເຊໂດນທີ່ຢູ່ຕິດດ້ານຫລັງຂອງໂຮ ງແຮມ ຈຳປາພາເລດ ແລະ
+                        ນັບເປັນຈຸດຊົມຕາເວັນຂຶ້ນ ແລະ ຕົກທີ່ງາມທີ່ສຸດໃນເມືອງປາກເຊ.
+                    </p>
+                </div>
+                <div
+                    class="w-full drop-shadow-lg mx-2 rounded-md hover:bg-[#f3f3f3] ease-in-out duration-300 overflow-hidden p-5">
+                    <div class="w-full h-[15em] overflow-hidden">
+                        <img src="Images/Thakyeng/that_img_02.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+                    </div>
+                    <h4 class="py-2 text-xl font-semibold">ຕາດເຍຶອງ</h4>
+                    <p class="py-2">
+                        ຕາດເຍືອງ ຢູ່ໃນຄວາມຮັບຜິດຊອບຂອງ ບ້ານພັດທະນາຫຼັກ 40 ເຂດ 2 ເມືອງປາກຊ່ອງ
+                        ຫ່າງຈາກບ້ານໄປທາງທິດຕາເວັນຕົກສຽງໃຕ້ 1,3 ກິໂລແມັດ, ສູງ ປະມານ 50 ແມັດ, ປະກອບດ້ວຍ 2 ຖ້ານ, ພັກເທິງສູງ
+                        10 ແມັດ, ພັກລຸ່ມສູງ 4,5 ແມັດ. ສອງຟາກຕາດເປັນຜາເຫວຊັນ ມີໄມ້ເຮັ້ຍ, ປ່າກ້ວຍ ແລະ ປ່າສັບປົນ
+                        ຕົ້ນໄມ້ໃຫຍ່ຈຳນວນໜຶ່ງ. ຕາດເຍືອງປະກອບມີ 3 ຕາດນ້ອຍ ແລະ ແກ້ງ 1 ຍ່ານຄື: ລຸ່ມຕາດມີ 1 ຕາດນ້ອຍ ສູງ 3
+                        ແມັດ ເປັນພະລານຫີນຍາວຈົນຮອດຫົວຕາດໄຮ ເບື້ອງເທິງ ຫຼື ຫຼັງຕາດຂື້ນໄປກວມກວ້າງ 10-12 ແມັດ. ນອກນີ້ຍັງມີ
+                        2 ສາຂາທີ່ຊາວບ້ານເອີ້ນ "ຕາດຜັນ" ສູງ 2-6 ແມັດ.
+                    </p>
+                </div>
+                <div
+                    class="w-full drop-shadow-lg mx-2 rounded-md hover:bg-[#f3f3f3] ease-in-out duration-300 overflow-hidden p-5">
+                    <div class="w-full h-[15em] overflow-hidden">
+                        <img src="Images/Thakfan/that_img_03.jpg" class="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 drop-shadow-lg" alt="">
+                    </div>
+                    <h4 class="py-2 text-xl font-semibold">ຕາດຟານ</h4>
+                    <p class="py-2">
+                        ນ້ຳຕົກຕາດຟານ ຕາດທີ່ສູງທີ່ສຸດໃນລາວ " ນ້ຳຕົກຕາດຟານ ນ້ຳຕົກຝາແຝດ ແຫ່ງດົງຫົວສາວ ທີ່ສູງທີ່ສຸດຂອງລາວ
+                        ທ່າມກາງ ແລະ ແວດລ້ອມ ຫຸບເຂົາ ປ່າທຳມະຊາດ " ນ້ຳຕົກຕາດຟານ (ຕາດ ຄື ນ້ຳຕົກຟານ ຄື ຊື່ຂອງ
+                        ສັດປ່າຊະນິດໜຶ່ງ ) ນ້ຳຕົກຕາດຟານ ຫລື ຮຽກອີກ ຊື່ໜຶ່ງວ່າ ນ້ຳຕົກຕາດດົງຫົວສາວ ນ້ຳຕົກຕາດຟານ
+                        ແຫ່ງນີ້ເປັນນ້ຳຕົກຕາດ ທີ່ສູງທີ່ສຸດຂອງປະເທດລາວ ຊຶ່ງເປັນນ້ຳຕົກຕາດທີ່ມີຄວາມສູງ ປະມານ 200 ແມັດ
+                        ບັນຍາກາດໂດຍຮອບ ຂອບນ້ຳຕົກຕາດຟານ ເ ປັນສະພາບອາກາດຊຸ່ມຊື່ນ ໜາວເຢັນຕະຫລອດປີ ເປັນເສັ້ນທາງສູ່
+                        ເມືອງປາກຊ່ອງ ເມືອງແຫ່ງຂຸນເຂົາ ແລະ ສວນກາເຟ ເປັນພືດເສດຖະກິດ ທີ່ສົ່ງອອກຂອງ ປະເທດ
+                        ນ້ຳຕົກຕາດຟານເປັນນ້ຳຕົກຕາດທີ່ເກີດຈາກການໄຫລມາລວມກັນ ຂອງສາຍນ້ຳ ຂອງ ພູເຂົາ 2 ໜ່ວຍ ຊຶ່ງໄຫລຕະຫລອດໝົດປີ
+                        ອ້ອມຮອບນໍ້າຕົກຕາດຟານ ຈະເຕັມໄປດ້ວຍປ່າໄມ້ ນານາພັນ ອັນສົມບູນ ຂຽວຂະຈີ ອັນສວຍສົດງົດງາມ ຂອງທຳມະຊາດ
+                        ລຳເນົາໄພເປັນສະເໜ່ ປ່າພວກເຂົາທຳມະຊາດຕໍ່ແຂກ ຜູ້ມາຢ້ຽມຢາມ ໄດ້ຊື່ນຊົມ ແລະ ພາຍໃນບໍລິເວນດັ່ງກ່າວ
+                        ຍັງມີຕາດຟານຣີສອດ ໃກ້ຊິດຕິດຂອບນ້ຳຕົກຕາດຟານ ລ້ອມຮອບໄວ້ສຳລັບທ່ານທີ່ມັກສະຖານທີ່ພັກຜ່ອນ
+                        ແບບຣີສອດທຳມະຊາດລາວໃຕ້ ເມືອງປາກຊ່ອງ ທີ່ຕິດທຳມະຊາດນັ້ນຄືຕາດຟານຣີສອດ. ອີກໜຶ່ງຣີສອດ ທີ່ທ່ານພັກແລ້ວ
+                        ຈະບໍ່ຜິດຫວັງກັບ ຣີສອດທີ່ແວດລ້ອມ ທຳມະຊາດນ້ຳຕົກປ່າພວກເຂົາລຳເນົາໄພຂອງລາວໃຕ້.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <!-- ປີດ ພາກສ່ວນ ແນະນຳ -->
+
+
+
+
+    <!-- ພາກສ່ວນສຸດທ້າຍ -->
+    <div class="w-full bg-gradient-to-t from-[#ffac00] to-[#ffcc00] p-4 md:flex justify-between items-center gap-3">
+        <div class="w-full  h-72 flex flex-col justify-center items-start p-8">
+            <h2 class="text-white font-bolck text-4xl my-6 -mt-8 py-3 border-b-2 border-b-white">CK Travel</h2>
+            <div class="flex flex-col gap-2">
+                <a href="#">ໜ້າຫລັກ</a>
+                <a href="about.html">ກ່ຽວກັບ</a>
+                <a href="#">ຄວາມເປັນມາ</a>
+                <a href="#">ຕິດຕໍ່ພວກເຮົາ</a>
+            </div>
+        </div>
+        <div class="w-full  h-72 flex flex-col justify-center items-center p-8">
+            <h2 class="text-white font-bolck text-2xl my-6 -mt-8 py-3">Contact Us</h2>
+            <p class="text-white">02076968199</p>
+            <p class="text-white">Chii Vang Developing</p>
+            <p class="text-white">XeemBanHaoDev9@gmail.com</p>
+
+        </div>
+    </div>
+    <div class="bg-[#445] p-2 flex justify-center items-center">
+        <span class="text-white">&copy; 2023 || ນັກສຶກສາ ວິທະຍາໄລ ບີຊີທີ</span>
+    </div>
+    <!-- ພາກສ່ວນສຸດທ້າຍ -->
+
+
+    <script src="js/web.js"></script>
+</body>
+
+</html>
